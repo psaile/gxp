@@ -11,6 +11,11 @@
         "data/FeatureTypeClassifier.js",
         "data/WFSFeatureStore.js",
         "data/WFSProtocolProxy.js",
+        "data/SOSCapabilitiesReader.js",
+        "data/SOSCapabilitiesStore.js",
+        "data/SOSObservationReader.js",
+        "data/SOSObservationStore.js",
+        "data/SOSGetObservation.js",
         "menu/LayerMenu.js",
         "widgets/CrumbPanel.js",
         "widgets/EmbedMapDialog.js",
@@ -112,6 +117,7 @@
         "plugins/Print.js",
         "plugins/LoadingIndicator.js",
         "plugins/Playback.js",
+        "plugins/SOSSource.js",
         "locale/es.js",
         "locale/ca.js"
     );

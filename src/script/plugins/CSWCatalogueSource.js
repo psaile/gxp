@@ -48,7 +48,7 @@ gxp.plugins.CSWCatalogueSource = Ext.extend(gxp.plugins.CatalogueSource, {
                 })
             }, this.proxyOptions || {})),
             reader: new GeoExt.data.CSWRecordsReader({
-                fields: ['title', 'abstract', 'URI', 'bounds', 'projection', 'references']
+                fields: ['title', 'abstract', 'URI', 'bounds', 'projection', 'references', 'date']
             })
         });
         gxp.plugins.LayerSource.prototype.createStore.apply(this, arguments);
@@ -117,6 +117,7 @@ gxp.plugins.CSWCatalogueSource = Ext.extend(gxp.plugins.CatalogueSource, {
         var data = {
             "resultType": "results",
             "maxRecords": options.limit,
+            //"outputSchema": "http://www.isotc211.org/2005/gmd",
             "Query": {
                 "typeNames": "gmd:MD_Metadata",
                 "ElementSetName": {
